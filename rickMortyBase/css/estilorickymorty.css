@@ -1,0 +1,22 @@
+.productov{
+    border: 3px solid grey;
+    background-color: white ;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    margin-top: 15px;
+   
+
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Evita que los elementos se envuelvan */
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    margin: 20px 0;
+    margin-top: 35px;
+     
+}
