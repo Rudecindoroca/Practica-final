@@ -1,0 +1,131 @@
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.nav {
+    margin: 0 !important;
+}
+.nav a{
+    color: #444;
+    text-decoration: none;
+}
+.nav a:hover{
+    font-weight: bold;
+}
+.search-form {
+    padding: .5rem 1rem;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    column-gap: 5px;
+}
+.search-form .btn-sm{
+    line-height: 1;
+    font-size: 0.9rem;
+}
+.search-form input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-top: 3px;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 1rem;
+    padding-bottom: 4px;
+}
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.single-card{
+    width: 23%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.card-small{
+    width: 19.5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-small p,
+.card-small h5{
+    margin-bottom: 0;
+}
+.card-small img{
+    width: 100%;
+}
+
+.card-minimal{
+    width: 19%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.card-minimal img {
+    width: 160px;
+    border-radius: 90px;
+    margin-bottom: 10px;
+}
+#people {
+    grid-template-columns: repeat(5,1fr);
+}
+#now-playing {
+    grid-template-columns: repeat(6, 1fr);
+}
+#now-playing .card-text{
+    height: 100px;
+    overflow: hidden;
+}
+
+.tv-show{
+    grid-template-columns: repeat(5, 1fr);
+}
+.tv-show .card-text{
+    height: 100px;
+    overflow: hidden;
+}
+#on-air-today{
+    grid-template-columns: repeat(6, 1fr);
+}
+#on-air-today .card-text{
+    height: 100px;
+    overflow: hidden;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info img{
+    width: 25%;
+}
+.element-data{
+    width: 74%;
+}
+
+
+footer{
+    padding: 100px 0;
+    background-color: #444;
+    border-radius: 10px;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media(min-width: 765px){
+    nav {
+        grid-template-columns: 4fr 3fr;
+    }
+}

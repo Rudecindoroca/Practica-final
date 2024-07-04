@@ -36,14 +36,26 @@ document.querySelector(".contact-form").addEventListener("submit", function(even
         invalidPhone.textContent = "Ingrese un valor";
         invalidPhone.style.display = "block";
         valid = false;
+    } else if (phoneInput.value.length < 8) {
+        invalidPhone.textContent = "Ingrese un número de teléfono válido";
+        invalidPhone.style.display = "block";
+        valid = false;
     }
     if (passwordInput.value === "") {
         invalidPassword.textContent = "Ingrese un valor";
         invalidPassword.style.display = "block";
         valid = false;
+    } else if (passwordInput.value.length < 3) {
+        invalidPassword.textContent = "La contraseña debe tener al menos 3 caracteres";
+        invalidPassword.style.display = "block";
+        valid = false;
     }
     if (rePasswordInput.value === "") {
         invalidRePassword.textContent = "Ingrese un valor";
+        invalidRePassword.style.display = "block";
+        valid = false;
+    } else if (rePasswordInput.value !== passwordInput.value) {
+        invalidRePassword.textContent = "Las contraseñas no coinciden";
         invalidRePassword.style.display = "block";
         valid = false;
     }
